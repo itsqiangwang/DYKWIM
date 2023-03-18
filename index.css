@@ -1,0 +1,17 @@
+html, body{
+    background-color: white;
+}
+
+div span{
+    display: none;
+    font-size: 72pt;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    mix-blend-mode: difference;
+    color: white;
+    text-align: center;
+    line-height: 0.8;
+}
