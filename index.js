@@ -549,12 +549,11 @@ var wtfResponseArr = [
   'translations.'
 ];
 
-// var queryContainer = document.getElementById('query-container');
-// var queryArr = [
-//   "WTF?",
-//   "TMM",
-//   "WDYM?",
-// ];
+var queryContainer = document.getElementById('query-container');
+var queryArr = [
+  "WTF?",
+  "WDYM?",
+];
 var responseIndex = 0;
 
 function wtf() {
@@ -571,10 +570,10 @@ function wtf() {
     createRightSpeechBubble.appendChild(rightMessageContainer);
     interrogationContainer.appendChild(createRightSpeechBubble);
 
-    rightMessageContainer.innerText = "WTF?";
-    // randomQueryIndex = Math.floor((Math.random() * queryArr.length));  
-    // queryContainer.innerText = queryArr[randomQueryIndex];
-    // rightMessageContainer.innerText = queryArr[randomQueryIndex];  
+    randomQueryIndex = Math.floor((Math.random() * queryArr.length));  
+    rightMessageContainer.innerText = queryArr[randomQueryIndex];  
+
+    queryContainer.value = "";
 
     setTimeout(function () {
       var createLeftSpeechBubble = document.createElement("div");

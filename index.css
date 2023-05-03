@@ -63,15 +63,23 @@ html, body{
     border: 1px solid lightgrey;
     display: flex;
     align-items: center;
-    /* justify-content: right; */
+    /* justify-content: center; */
     padding-left: 10px;
     position: relative;
 }
 
-.wifi-off-signal div span{
+.wifi-off-signal div textarea{
     /* border: 1px solid red; */
     margin-left: 2.5vw;
     font-size: 5vw;
+    width: 60vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    resize: none;
 }
 
 .wifi-off-signal div button{
