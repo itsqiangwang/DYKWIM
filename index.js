@@ -512,6 +512,7 @@ function onlineOfflineToggle() {
     wifiOffSignal.style.bottom = '-20vh';
     interrogationContainer.style.height = '100vh';
     interrogationContainer.scrollTop = interrogationContainer.scrollHeight;
+    interrogationContainer.style.backgroundColor = 'rgb(0, 150, 255)';
   });
 
   window.addEventListener("online", (e) => {
@@ -521,6 +522,7 @@ function onlineOfflineToggle() {
     wifiOffSignal.style.bottom = '0vh';
     interrogationContainer.style.height = '80vh';
     interrogationContainer.scrollTop = interrogationContainer.scrollHeight;
+    interrogationContainer.style.backgroundColor = 'transparent';
   });
 }
 
@@ -531,28 +533,17 @@ var wtfResponseArr = [
   // "Toggle your Wi-Fi to read translations of these internet slangs put together by the FBI.",
   // "The FBI put together a guide to internet slang",
   // "woooah",
-  'The',
-  'FBI',
-  'put',
-  'together',
-  'a',
-  'guide',
-  'to',
-  'internet',
-  'slang.',
-  'Toggle',
-  'your',
-  'Wi-Fi',
-  'to',
-  'read',
-  'between',
-  'translations.'
+  'TYICTRBTT',
+  'Toggle your internet connection to read between the translations'
 ];
 
 var queryContainer = document.getElementById('query-container');
 var queryArr = [
-  "WTF?",
-  "WDYM?",
+  "WTF",
+  "WDYM",
+  "SMH",
+  "WTH",
+  "IDKWYM"
 ];
 var responseIndex = 0;
 
